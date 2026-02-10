@@ -319,7 +319,7 @@
     showStatus("ok", "Apro il checkout sicuro…", "Tra un attimo verrai reindirizzato su Stripe.");
 
     try{
-      const res = await fetch("/.netlify/functions/create-checkout", {
+      const res = await fetch("https://irrigold.vercel.app/api/create-checkout", {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify({
